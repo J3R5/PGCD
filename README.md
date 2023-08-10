@@ -4,7 +4,7 @@
 
 Ce répertoire va montrer un programme console qui demande deux nombres entiers strictement positifs et calcule leur PGCD et l'affiche. Le programme dit aussi s'ils sont premiers entre eux.
 
-Code : [Projet]()
+Code : [Projet](https://github.com/J3R5/PGCD/tree/main/PGCD)
 
 Application : [Console.exe]()
 
