@@ -1,0 +1,8 @@
+C:\Users\cleme\Desktop\IUT\Informatique\perso\PGCD\PGCD\bin\Debug\PGCD.exe.config
+C:\Users\cleme\Desktop\IUT\Informatique\perso\PGCD\PGCD\bin\Debug\PGCD.exe
+C:\Users\cleme\Desktop\IUT\Informatique\perso\PGCD\PGCD\bin\Debug\PGCD.pdb
+C:\Users\cleme\Desktop\IUT\Informatique\perso\PGCD\PGCD\obj\Debug\PGCD.csproj.AssemblyReference.cache
+C:\Users\cleme\Desktop\IUT\Informatique\perso\PGCD\PGCD\obj\Debug\PGCD.csproj.SuggestedBindingRedirects.cache
+C:\Users\cleme\Desktop\IUT\Informatique\perso\PGCD\PGCD\obj\Debug\PGCD.csproj.CoreCompileInputs.cache
+C:\Users\cleme\Desktop\IUT\Informatique\perso\PGCD\PGCD\obj\Debug\PGCD.exe
+C:\Users\cleme\Desktop\IUT\Informatique\perso\PGCD\PGCD\obj\Debug\PGCD.pdb
