@@ -123,3 +123,56 @@ Le programme possède deux variables interne Saisie et Nbre. Saisie est une chai
 La fonction affiche la variable Msg. Puis elle demande la saisie de l'utilisateur le résultat va dans la variable Saisie. On essaye ensuite de convertir cette variable en nombre si cela marche le résultat ira dans la variable Nbre sinon la variable Nbre ne changera pas. Ensuite on regarde si la conversion a fonctionné et si le nombre est strictement positif, dans le cas ou l'un des deux est faux on affiche un message d'erreur de saisie et on recommence la boucle tant que le résultat n'es pas correcte.
 
 Une fois le résultat correcte la fonction retourne la variable Nbre.
+
+### Fonction PGCD()
+
+La fonction PGCD() prend en paramètre deux entier et retourne leur PGCD.
+
+~~~C#
+
+        static int PGCD(int Nbre_a, int Nbre_b)
+        {
+            /*
+             * fonction de calcul du PGCb
+             * entre deux nombres donné
+             * à la fonction
+             * 
+             * Jérémy Clémente 09/08/2023
+             */
+
+            //variable
+
+            int Nbre_c;
+
+            //initialisation 
+
+            Nbre_c = 0;
+
+            //Début
+
+            while (Nbre_a != Nbre_b)
+            {
+                Nbre_c = Math.Min(Nbre_a, Nbre_b);
+                Nbre_b = Math.Abs(Nbre_a - Nbre_b);
+                Nbre_a = Nbre_c;
+            }
+
+            return Nbre_a;
+
+            //Fin
+        }
+
+~~~
+
+En plus des deux variables à qui prend la fonction il y a aussi une variable interne Nbre_c. 
+
+La fonction se caractérise par un boucle où l'on utilise la méthode de calcul vu au début. C'est a dire on garde en mémoire via la variable Nbre_c le plus petit nombre entre Nbre_a et Nbre_b. Puis, on prend la valeur absolue de la soustraction de Nbre_a et Nbre_b et, cette valeur ira dans Nbre_b. Ensuite, on redonne la valeur Nbre_c dans Nbre_a pour finalement les comparés.
+
+Si les nombres sont identiques on retourne la valeur sinon on recommence la boucle.
+
+### Conclusion 
+
+Voila la fin de se markdown sur le programme de PGCD, il existe aussi d'autre method de calcul comme par la division euclidienne ou encore bien d'autre.
+
+
+
