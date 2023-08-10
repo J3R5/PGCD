@@ -2,13 +2,17 @@
 
 ### Introduction
 
-Ce répertoir va montrer un programme console qui demande le deux nombres entier strictement positif et calcul leur PGCD et l'affiche. Le programme dit aussi si ils sont premier entre deux.
+Ce répertoire va montrer un programme console qui demande deux nombres entiers strictement positifs et calcule leur PGCD et l'affiche. Le programme dit aussi s'ils sont premiers entre eux.
+
+Code : [Projet]()
+
+Application : [Console.exe]()
 
 ### PGCD
 
-Le PGCD de deux nombre est le plus grand diviseur commun entre les deux si le diviseur est 1 cela signifie que les deux nombres son aussi premier entre eux. Pour calculer le PGCD il faut que les deux nombres sois positif et entier.
+Le PGCD de deux nombres est le plus grand diviseur commun entre les deux, si le diviseur est 1 cela signifie que les deux nombres sont aussi premiers entre eux. Pour calculer le PGCD, il faut que les deux nombres soient positifs et entiers.
 
-la méthode de calcul ici se fera par soustraction successive d'abord on détermine le nombre le plus petit que l'on garde en mémoire puis, on soustrait les deux nombres pour garder la valeur absolue. Ensuite, on compare le nombre obtenir avec le plus petit déterminer avant si il sont identique on as le PGCD sinon on recommence jusqu'à ce qu'il le sois.
+La méthode de calcul ici se fera par soustractions successives, d'abord on détermine le nombre le plus petit que l'on garde en mémoire puis, on soustrait les deux nombres pour garder la valeur absolue. Ensuite, on compare le nombre obtenu avec le plus petit déterminé avant s'ils sont identiques, on a le PGCD, sinon on recommence jusqu'à ce qu'ils le soient.
 
 ### Main 
 
@@ -35,7 +39,7 @@ la méthode de calcul ici se fera par soustraction successive d'abord on déterm
 
             //Début
 
-            Console.WriteLine("Ce programme calcul le PGCD de deux nombre saisie");
+            Console.WriteLine("Ce programme calcul le PGCD de deux nombres saisis");
             Console.WriteLine("Les nombres doivent être strictment positifs");
             Console.WriteLine();
 
@@ -64,13 +68,13 @@ la méthode de calcul ici se fera par soustraction successive d'abord on déterm
 
 ~~~
 
-Le programme créer trois variables Nbre_a et Nbre_b sont les deux nombres que l'utilisateur va devoir choisir. Quant a la variable Nbre_PGCD c'est le résultat du PGCD de Nbre_a et Nbre_b. On demande d'abord la valeur de Nbre_a avec la fonction Demande_uint(), ensuite on recommence en demandant la valeur du deuxième nombre (Nbre_b) avec la même fonction Demande_uint().
+Le programme crée trois variables Nbre_a et Nbre_b. Ils sont les deux nombres que l'utilisateur va devoir choisir. Quant à la variable Nbre_PGCD, c'est le résultat du PGCD de Nbre_a et Nbre_b. On demande d'abord la valeur de Nbre_a avec la fonction Demande_uint(), ensuite on recommence en demandant la valeur du deuxième nombre (Nbre_b) avec la même fonction Demande_uint().
 
-Ensuite, on calcul le PGCD de Nbre_a et Nbre_b et on affiche le résultat dans la console. Finalement, on si les nombres sont premier entre eux on les affiches.
+Ensuite, on calcule le PGCD de Nbre_a et Nbre_b et on affiche le résultat dans la console. Finalement, si les nombres sont premiers entre eux, on l'affiche.
 
 #### Demande_uint()
 
-La fonction Demande_uint() permet demande à l'utilisateur de saisir un nombre entier strictement positif (suppérieur à 0).
+La fonction Demande_uint() permet de demander à l'utilisateur de saisir un nombre entier strictement positif (suppérieur à 0).
 
 ~~~C#
 
@@ -116,17 +120,17 @@ La fonction Demande_uint() permet demande à l'utilisateur de saisir un nombre e
 
 ~~~
 
-Cette fonction possède un paramètre optionnel Msg qui est le message afficher a l'utilisateur qu'il est possible de changer par défaut le message est : Veuillez saisir un nombre entier strictement positif.
+Cette fonction possède un paramètre optionnel Msg qui est le message affiché à l'utilisateur qu'il est possible de changer par défaut le message est : Veuillez saisir un nombre entier strictement positif.
 
-Le programme possède deux variables interne Saisie et Nbre. Saisie est une chaine de caractère et Nbre est un entier.
+Le programme possède deux variables internes : Saisie et Nbre. Saisie est une chaîne de caractère et Nbre est un entier.
 
-La fonction affiche la variable Msg. Puis elle demande la saisie de l'utilisateur le résultat va dans la variable Saisie. On essaye ensuite de convertir cette variable en nombre si cela marche le résultat ira dans la variable Nbre sinon la variable Nbre ne changera pas. Ensuite on regarde si la conversion a fonctionné et si le nombre est strictement positif, dans le cas ou l'un des deux est faux on affiche un message d'erreur de saisie et on recommence la boucle tant que le résultat n'es pas correcte.
+La fonction affiche la variable Msg. Puis, elle demande la saisie de l'utilisateur, le résultat va dans la variable Saisie. On essaye ensuite de convertir cette variable en nombre, si cela marche le résultat ira dans la variable Nbre, sinon la variable Nbre ne changera pas. Ensuite, on regarde si la conversion a fonctionné et si le nombre est strictement positif, dans le cas où l'un des deux est faux, on affiche un message d'erreur de saisie et on recommence la boucle tant que le résultat n'est pas correct.
 
-Une fois le résultat correcte la fonction retourne la variable Nbre.
+Une fois le résultat correct la fonction retourne la variable Nbre.
 
 ### Fonction PGCD()
 
-La fonction PGCD() prend en paramètre deux entier et retourne leur PGCD.
+La fonction PGCD() prend en paramètre deux entiers et retourne leur PGCD.
 
 ~~~C#
 
@@ -164,15 +168,15 @@ La fonction PGCD() prend en paramètre deux entier et retourne leur PGCD.
 
 ~~~
 
-En plus des deux variables à qui prend la fonction il y a aussi une variable interne Nbre_c. 
+En plus des deux variables que prend la fonction, il y a aussi une variable interne Nbre_c. 
 
-La fonction se caractérise par un boucle où l'on utilise la méthode de calcul vu au début. C'est a dire on garde en mémoire via la variable Nbre_c le plus petit nombre entre Nbre_a et Nbre_b. Puis, on prend la valeur absolue de la soustraction de Nbre_a et Nbre_b et, cette valeur ira dans Nbre_b. Ensuite, on redonne la valeur Nbre_c dans Nbre_a pour finalement les comparés.
+La fonction se caractérise par une boucle où l'on utilise la méthode de calcul vue au début. C'est à dire, on garde en mémoire via la variable Nbre_c le plus petit nombre entre Nbre_a et Nbre_b. Puis, on prend la valeur absolue de la soustraction de Nbre_a et Nbre_b et, cette valeur ira dans Nbre_b. Ensuite, on redonne la valeur Nbre_c dans Nbre_a pour finalement les comparer.
 
-Si les nombres sont identiques on retourne la valeur sinon on recommence la boucle.
+Si les nombres sont identiques, on retourne la valeur sinon on recommence la boucle.
 
 ### Conclusion 
 
-Voila la fin de se markdown sur le programme de PGCD, il existe aussi d'autre method de calcul comme par la division euclidienne ou encore bien d'autre.
+Voilà la fin de ce markdown sur le programme de PGCD, il existe aussi d'autres méthodes de calcul comme par la division euclidienne ou bien d'autres.
 
 
 
