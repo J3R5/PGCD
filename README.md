@@ -8,6 +8,8 @@ Code : [Projet]()
 
 Application : [Console.exe]()
 
+logiciel : [Visual studio 2022](https://visualstudio.microsoft.com/fr/)
+
 ### PGCD
 
 Le PGCD de deux nombres est le plus grand diviseur commun entre les deux, si le diviseur est 1 cela signifie que les deux nombres sont aussi premiers entre eux. Pour calculer le PGCD, il faut que les deux nombres soient positifs et entiers.
